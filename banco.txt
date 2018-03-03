@@ -1,0 +1,1 @@
+CREATE TABLE tb_contatos( id INT NOT NULL AUTO_INCREMENT, nome VARCHAR(50) NOT NULL, celular VARCHAR(15), telefone VARCHAR(15), rua VARCHAR(30), bairro VARCHAR(30), cidade VARCHAR(30), estado VARCHAR(3), pais VARCHAR(30), cargo VARCHAR(30), PRIMARY KEY(id), FULLTEXT KEY buscador(nome, celular, telefone, cidade) )
