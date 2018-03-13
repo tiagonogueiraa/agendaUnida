@@ -11,7 +11,7 @@ $cidade = $_POST['cidade'];
 $celular = $_POST['celular'];
 $telefone = $_POST['telefone'];
 
-$sql = "INSERT INTO contato(nome, sobrenome, rua, bairro, cidade, celular, telefone) VALUES ('$nome','$sobrenome', '$rua', '$bairro', '$cidade', '$celular' ,'$telefone')";
+$sql = "INSERT INTO contato(nome, rua, bairro, cidade, celular, telefone) VALUES ('$nome', '$rua', '$bairro', '$cidade', '$celular' ,'$telefone')";
 
 if ($mysqli->query($sql) === TRUE) {
 	echo "Usuário incluido com sucesso!";

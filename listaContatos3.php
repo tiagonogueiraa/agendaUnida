@@ -28,7 +28,7 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
 		<table width="75%" border="1" cellspacing="0" cellpadding="10">
 			<tr>
 				<td>Nome</td>
-				<td>Sobrenome</td>
+				<!-- <td>Sobrenome</td> -->
 				<td>Celular</td>
 				<td>Telefone</td>
 				<td>Rua</td>
@@ -40,7 +40,7 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
 
 			<tr>
 				<td> <?php echo $dado["nome"]; ?></td>
-				<td> <?php echo $dado["sobrenome"]; ?></td>
+				<!-- <td> <?php //echo $dado["sobrenome"]; ?></td> -->
 				<td> <?php echo $dado["celular"]; ?></td>
 				<td> <?php echo $dado["telefone"]; ?></td>
 				<td> <?php echo $dado["rua"]; ?></td>

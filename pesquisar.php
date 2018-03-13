@@ -7,7 +7,7 @@
 
 	<div class="container">
 
-		<form name="frmBusca" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?a=buscar">
+		<form name="frmBusca" method="GET" action="<?php echo $_SERVER['PHP_SELF'] ?>?a=buscar">
 
 			<input type="text" name="palavra">
 			<input type="submit" value="Buscar" name="">
@@ -29,7 +29,7 @@
 		if ($a == "buscar") {
 
 		//Pegamos a palavra
-			$palavra = trim($_POST['palavra']);
+			$sql = trim($_POST['palavra']);
 
 
 		//verifica no banco a palavra digitada
