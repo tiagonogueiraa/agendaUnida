@@ -1,7 +1,7 @@
 <?php 
 include("conexao.php");
 
-$consulta = "SELECT * FROM contato";
+$consulta = "SELECT * FROM contato WHERE ";
 $con = $mysqli->query($consulta) or die($mysqli->error);
 
 

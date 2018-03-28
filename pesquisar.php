@@ -7,7 +7,7 @@
 
 	<div class="container">
 
-		<form name="frmBusca" method="GET" action="<?php echo $_SERVER['PHP_SELF'] ?>?a=buscar">
+		<form name="frmBusca" method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>?a=buscar">
 
 			<input type="text" name="palavra">
 			<input type="submit" value="Buscar" name="">
@@ -33,7 +33,7 @@
 
 
 		//verifica no banco a palavra digitada
-			$palavra = mysql_query("SELECT * FROM contato WHERE nome LIKE '%".$palavra."%' ORDER BY nome");
+			$palavra = mysql_query("SELECT * FROM agenda WHERE nome='palavra'");
 
 
 		//descobrimos o total de registros encontrados 
